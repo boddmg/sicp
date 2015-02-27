@@ -1,17 +1,12 @@
 (load "shared.scm")
-(define (count-change amount) (cc amount 5)) 
-(define (cc amount kinds-of-coins) 
-	(cond ((= amount 0) 1) 
-		((or (< amount 0) (= kinds-of-coins 0)) 0) 
-		(else (+ (cc amount 
-			(- kinds-of-coins 1)) 
-		(cc (- amount (
-			first-denomination kinds-of-coins)) 
-		kinds-of-coins))))) 
-(define (first-denomination kinds-of-coins) 
-	(cond ((= kinds-of-coins 1) 1)
-	 ((= kinds-of-coins 2) 5) 
-	 ((= kinds-of-coins 3) 10) 
-	 ((= kinds-of-coins 4) 25) 
-	 ((= kinds-of-coins 5) 50)))
-(printl (count-change 100))
+(use srfi-1)
+(define (print-number-list number-list)
+		(map 
+			(lambda (x)
+				(display 
+					(if (= 0 x) " " (number->string x))))
+			number-list)
+		(display "\n"))
+(print-number-list '(0 1 0 2 0 3))
+(print (map + '(0 1 2 3 1) '(1 2 3 4 5)))
+(print (drop '(1 2 3) 1))
