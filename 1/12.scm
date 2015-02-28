@@ -4,10 +4,12 @@
 	(define (print-number-list number-list)
 		(map 
 			(lambda (x)
-				(display 
-					(if (= 0 x) " " (number->string x))))
+				(if (= 0 x) 
+					(display "\t")
+					(display (string-append (number->string x) "\t"))))
 			number-list)
 		(display "\n"))
+
 	(define (pasca-triangle-iter layer block-width)
 		(if (= layer 1)
 			(begin
@@ -30,4 +32,4 @@
 				(print-number-list this-layer)
 				this-layer)))
 	(pasca-triangle-iter layer 1))
-(pasca-triangle 9)
+(pasca-triangle 10)
