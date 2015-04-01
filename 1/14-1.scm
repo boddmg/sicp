@@ -8,8 +8,11 @@
 		(else (begin 
 			(+ 
 			(cc amount (- kinds-of-coins 1))
-			(cc (- amount 
-				(first-denomination kinds-of-coins))
+			(cc (begin
+					(format #t "~A->~A\n" amount (- amount 
+						(first-denomination kinds-of-coins)))
+					(- amount 
+					(first-denomination kinds-of-coins)))
 				kinds-of-coins))))))
 
 (define (first-denomination kinds-of-coins)
@@ -20,7 +23,8 @@
 		  ((= kinds-of-coins 5) 50)
 	  )
 )
+(define (main arg)
+	(print "digraph {")
+	(count-change 20)
+	(print "}"))
 
-(print "digraph {")
-(count-change 100)
-(print "}")

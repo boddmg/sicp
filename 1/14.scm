@@ -19,3 +19,7 @@
 		  ((= kinds-of-coins 5) 50)
 	  )
 )
+
+(define (main arg)
+	(format #t "~sabc~a" 1 2)
+	(print (count-change 100)))
