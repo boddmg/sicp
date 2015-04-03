@@ -11,4 +11,4 @@
             (* base (expmod base (- exp 1) m))
             m))))
 
-; The expand of the recursive will become very complex.
+; The expanding of the recursive will be very complex.
