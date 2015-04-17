@@ -3,7 +3,7 @@
 (define (fermat-test n)
 	(define (try-it a last-result)
 		;(format #t "~A ~A\n" a last-result)
-		(if (= a 1)
+		(if (<= a 1)
 			last-result
 			(if (and last-result #t)
 				(try-it (- a 1) (= (expmod a n n) a))
@@ -18,4 +18,5 @@
 	(print (fermat-test 2821))
 	(print (fermat-test 6601))
 	(print (fermat-test 1000))
+	(print (fermat-test 10001))
 	)
