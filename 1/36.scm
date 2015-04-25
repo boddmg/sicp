@@ -2,7 +2,6 @@
 
 (define (fixed-point f first-guess)
 	(define (try guess)
-		(print guess)
 		(let ((next (f guess)))
 		(if (close-enough? guess next)
 		next
