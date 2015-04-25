@@ -1,3 +1,8 @@
+(define (pow x n)
+	(if (= n 1)
+		x
+		(* x (pow x (- n 1)))))
+
 (define (reduce f first-result src-list)
 	(define (iter f last-result new-list)
 		(if (null? new-list)
@@ -15,5 +20,8 @@
 			last-list))
 	(upside-down (iter start end step '())))
 
+(define (average x y)
+	(/ (+ x y) 2))
+
 (define (main parameters)
-	(print (range 0 10 1)))
+	(print (pow 2 8)))

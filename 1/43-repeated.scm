@@ -2,7 +2,7 @@
 
 (define (repeated f n)
 	(define (iter last-f n)
-		(if (= n 1)
+		(if (<= n 1)
 			last-f
 			(iter (compose f last-f) (- n 1))))
 	(iter f n))
