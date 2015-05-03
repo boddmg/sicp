@@ -4,7 +4,7 @@
 		)
 	)
 (define (sqrt-iter guess x) 
-	(new-if (good-enough? guess x) 
+	(if (good-enough? guess x) 
 		guess (sqrt-iter (improve guess x) x)
 		)
 	)
@@ -21,4 +21,5 @@
 	(< (abs (- (square guess) x)) 0.001))
 
 (define (sqrt x) (sqrt-iter 1.0 x))
-(display (sqrt 9))
+(define (main argv)
+	(display (sqrt 9)))

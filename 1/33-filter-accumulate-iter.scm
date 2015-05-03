@@ -1,5 +1,6 @@
 (load "32-iter.scm")
 (load "27.scm")
+(load "33-gcd.scm")
 
 (define (accumulate combiner null-value term a b next)
 	(define (iter a result)
@@ -31,17 +32,12 @@
 		(lambda (x) (+ x 1))
 		prime?))
 
-(define (GCD x y)
-	(if (= y 0)
-		x
-		(GCD y (remainder x y))))
-
 (define (relatively-prime-product n)
 	(filtered-accumulate * 1
 		(lambda (x) x)
 		1 n
 		(lambda (x) (+ x 1))
-		(lambda (x) (= (GCD x n) 1))
+		(lambda (x) (= (gcd x n) 1))
 	))
 
 (define (main argv)

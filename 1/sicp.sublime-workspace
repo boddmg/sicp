@@ -4,6 +4,98 @@
 		"selected_items":
 		[
 			[
+				"s",
+				"sqrt"
+			],
+			[
+				"clo",
+				"close-enough"
+			],
+			[
+				"ite",
+				"iterative-improve"
+			],
+			[
+				"fir",
+				"first-guess"
+			],
+			[
+				"fix",
+				"35-fixed-point"
+			],
+			[
+				"las",
+				"last-result"
+			],
+			[
+				"la",
+				"la	lambda"
+			],
+			[
+				"it",
+				"iterative-improve"
+			],
+			[
+				"go",
+				"good-enough"
+			],
+			[
+				"tes",
+				"test-times"
+			],
+			[
+				"av",
+				"average-damp"
+			],
+			[
+				"new",
+				"new-list"
+			],
+			[
+				"list",
+				"src-list"
+			],
+			[
+				"up",
+				"upside-down"
+			],
+			[
+				"sr",
+				"src-list"
+			],
+			[
+				"con",
+				"cons"
+			],
+			[
+				"de",
+				"define	define"
+			],
+			[
+				"der",
+				"deriv"
+			],
+			[
+				"cu",
+				"cubic-zero"
+			],
+			[
+				"fi",
+				"first-guess"
+			],
+			[
+				"tan",
+				"tan-cf"
+			],
+			[
+				"d",
+				"define	define"
+			],
+			[
+				"last",
+				"last-value"
+			],
+			[
 				"re",
 				"relatively-prime-product"
 			],
@@ -28,10 +120,6 @@
 				"accumulate"
 			],
 			[
-				"s",
-				"start"
-			],
-			[
 				"no",
 				"nontrivial-square-root"
 			],
@@ -44,7 +132,7 @@
 	"buffers":
 	[
 	],
-	"build_system": "Packages/C++/C++ Single File.sublime-build",
+	"build_system": "Packages/User/chicken.sublime-build",
 	"build_system_choices":
 	[
 		[
@@ -74,6 +162,26 @@
 					""
 				],
 				[
+					"Packages/Kulture/ASP.NET.sublime-build",
+					""
+				],
+				[
+					"Packages/User/chicken.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/chicken.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Scheme/Scheme.sublime-build",
+					""
+				],
+				[
 					"Packages/User/chicken.sublime-build",
 					""
 				]
@@ -87,12 +195,20 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 247.0,
+		"height": 307.0,
 		"last_filter": ":w",
 		"selected_items":
 		[
 			[
 				":w",
+				":w - Save"
+			],
+			[
+				":e",
+				":e - Revert"
+			],
+			[
+				":",
 				":w - Save"
 			],
 			[
@@ -104,8 +220,8 @@
 				"Package Control: Install Package"
 			],
 			[
-				":",
-				":w - Save"
+				"remo",
+				"Package Control: Remove Package"
 			],
 			[
 				"instal",
@@ -123,6 +239,8 @@
 		"height": 126.0,
 		"history":
 		[
+			"kill",
+			"kill csi",
 			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282d0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/'  + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
 			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aabf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/'  + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
 		]
@@ -138,10 +256,34 @@
 	},
 	"expanded_folders":
 	[
+		"/Users/boddmg/work/sicp",
 		"/Users/boddmg/work/sicp/1"
 	],
 	"file_history":
 	[
+		"/Users/boddmg/work/sicp/1/35-fixed-point.scm",
+		"/Users/boddmg/work/sicp/1/utility.scm",
+		"/Users/boddmg/work/sicp/1/45.scm",
+		"/Users/boddmg/work/sicp/1/46.scm",
+		"/Users/boddmg/work/sicp/1/45-lg.scm",
+		"/Users/boddmg/work/sicp/1/43-repeated.scm",
+		"/Users/boddmg/work/sicp/1/40-average-damp.scm",
+		"/Users/boddmg/work/sicp/1/35.scm",
+		"/Users/boddmg/work/sicp/1/36.scm",
+		"/Users/boddmg/work/sicp/1/40-deriv.scm",
+		"/Users/boddmg/work/sicp/1/42-compose.scm",
+		"/Users/boddmg/work/sicp/1/44.scm",
+		"/Users/boddmg/work/sicp/1/40-newtons.scm",
+		"/Users/boddmg/work/sicp/1/39.scm",
+		"/Users/boddmg/work/sicp/1/40.scm",
+		"/Users/boddmg/work/sicp/1/41.scm",
+		"/Users/boddmg/work/sicp/1/42.scm",
+		"/Users/boddmg/work/sicp/1/37.scm",
+		"/Users/boddmg/work/sicp/1/38.scm",
+		"/Users/boddmg/Library/Application Support/Sublime Text 3/Packages/User/Scheme.sublime-settings",
+		"/Users/boddmg/Library/Application Support/Sublime Text 3/Packages/User/Lisp.sublime-settings",
+		"/Users/boddmg/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/boddmg/work/sicp/1/34.scm",
 		"/Users/boddmg/work/sicp/1/20.scm",
 		"/Users/boddmg/work/sicp/1/31-iter.scm",
 		"/Users/boddmg/work/sicp/1/30.scm",
@@ -151,7 +293,6 @@
 		"/Users/boddmg/work/sicp/1/33-filter-accumulate.scm",
 		"/Users/boddmg/work/sicp/1/27.scm",
 		"/Users/boddmg/work/sicp/1/33-filter-accumulate-iter.scm",
-		"/Users/boddmg/work/sicp/1/34.scm",
 		"/Users/boddmg/work/sicp/1/24.scm",
 		"/Users/boddmg/work/sicp/1/23.scm",
 		"/Users/boddmg/work/sicp/1/29.scm",
@@ -160,7 +301,6 @@
 		"/Volumes/KINGSTON/U盘主人信息",
 		"/Users/boddmg/work/sicp/1/14-1.scm",
 		"/Users/boddmg/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/boddmg/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/Users/boddmg/Library/Application Support/Sublime Text 3/Packages/User/chicken.sublime-build"
 	],
 	"find":
@@ -256,6 +396,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"37",
+				"1/37.scm"
+			],
 			[
 				"28",
 				"1/28.scm"
