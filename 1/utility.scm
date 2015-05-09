@@ -1,7 +1,8 @@
 (define (pow x n)
-	(if (= n 1)
-		x
-		(* x (pow x (- n 1)))))
+	(cond 
+		((= n 0) 1)
+		((= n 1) x)
+		(else (* x (pow x (- n 1))))))
 
 (define (reduce f first-result src-list)
 	(define (iter f last-result new-list)

@@ -4,8 +4,96 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"reverse"
+			],
+			[
+				"li",
+				"list-pair"
+			],
+			[
+				"wi",
+				"width-interval"
+			],
+			[
+				"lo",
+				"lower"
+			],
+			[
+				"sub",
+				"sub-interval"
+			],
+			[
+				"up",
+				"upper-bound"
+			],
+			[
+				"u",
+				"upper-bound"
+			],
+			[
+				"ma",
+				"make-interval"
+			],
+			[
+				"p",
+				"print-interval"
+			],
+			[
+				"m",
+				"make-interval"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
 				"s",
-				"sqrt"
+				"sum"
+			],
+			[
+				"co",
+				"counter"
+			],
+			[
+				"i",
+				"iter"
+			],
+			[
+				"make",
+				"make-point"
+			],
+			[
+				"le",
+				"length-rectangle"
+			],
+			[
+				"de",
+				"distance-point"
+			],
+			[
+				"po",
+				"point-rectangle"
+			],
+			[
+				"mak",
+				"make-point"
+			],
+			[
+				"pr",
+				"print-rectangle"
+			],
+			[
+				"print",
+				"print-point"
+			],
+			[
+				"mi",
+				"midpoint"
+			],
+			[
+				"gcd",
+				"gcd-number"
 			],
 			[
 				"clo",
@@ -56,20 +144,12 @@
 				"src-list"
 			],
 			[
-				"up",
-				"upside-down"
-			],
-			[
 				"sr",
 				"src-list"
 			],
 			[
 				"con",
 				"cons"
-			],
-			[
-				"de",
-				"define	define"
 			],
 			[
 				"der",
@@ -88,16 +168,8 @@
 				"tan-cf"
 			],
 			[
-				"d",
-				"define	define"
-			],
-			[
 				"last",
 				"last-value"
-			],
-			[
-				"re",
-				"relatively-prime-product"
 			],
 			[
 				"fil",
@@ -131,6 +203,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/Users/boddmg/work/sicp/2/17-last-pair.scm",
+			"settings":
+			{
+				"buffer_size": 145,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/boddmg/work/sicp/2/18-reverse.scm",
+			"settings":
+			{
+				"buffer_size": 332,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "utility.scm",
+			"settings":
+			{
+				"buffer_size": 674,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/User/chicken.sublime-build",
 	"build_system_choices":
@@ -204,16 +300,16 @@
 				":w - Save"
 			],
 			[
-				":e",
-				":e - Revert"
-			],
-			[
 				":",
 				":w - Save"
 			],
 			[
 				":W",
 				":w - Save"
+			],
+			[
+				":e",
+				":e - Revert"
 			],
 			[
 				"ins",
@@ -256,15 +352,36 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/boddmg/work/sicp",
-		"/Users/boddmg/work/sicp/1"
+		"/Users/boddmg/work/sicp"
 	],
 	"file_history":
 	[
-		"/Users/boddmg/work/sicp/1/35-fixed-point.scm",
+		"/Users/boddmg/work/resume/cv/CV.md",
+		"/Users/boddmg/work/sicp/2/9-interval-width.scm",
+		"/Users/boddmg/work/sicp/2/7-interval-base.scm",
+		"/Users/boddmg/work/sicp/2/7.scm",
+		"/Users/boddmg/work/sicp/2/8-sub-interval.scm",
+		"/Users/boddmg/work/sicp/2/6.scm",
 		"/Users/boddmg/work/sicp/1/utility.scm",
-		"/Users/boddmg/work/sicp/1/45.scm",
+		"/Users/boddmg/work/sicp/2/5.scm",
+		"/Users/boddmg/work/sicp/2/4.scm",
+		"/Users/boddmg/work/sicp/2/2-distance.scm",
 		"/Users/boddmg/work/sicp/1/46.scm",
+		"/Users/boddmg/work/sicp/2/3-representation1.scm",
+		"/Users/boddmg/work/sicp/2/3-representation2.scm",
+		"/Users/boddmg/work/sicp/2/3-rectangle-calculate.scm",
+		"/Users/boddmg/work/sicp/2/3.scm",
+		"/Users/boddmg/work/sicp/1/6.scm",
+		"/Users/boddmg/work/sicp/2/2-point-base.scm",
+		"/Users/boddmg/work/sicp/2/2.scm",
+		"/Users/boddmg/work/sicp/2/2-midpoint-segment.scm",
+		"/Users/boddmg/work/sicp/1/33-gcd.scm",
+		"/Users/boddmg/work/sicp/2/1-rat-base.scm",
+		"/Users/boddmg/work/sicp/2/1.scm",
+		"/Users/boddmg/work/sicp/1/33-filter-accumulate-iter.scm",
+		"/Users/boddmg/work/sicp/2/1-print-rat.scm",
+		"/Users/boddmg/work/sicp/1/35-fixed-point.scm",
+		"/Users/boddmg/work/sicp/1/45.scm",
 		"/Users/boddmg/work/sicp/1/45-lg.scm",
 		"/Users/boddmg/work/sicp/1/43-repeated.scm",
 		"/Users/boddmg/work/sicp/1/40-average-damp.scm",
@@ -292,7 +409,6 @@
 		"/Users/boddmg/work/sicp/1/32-iter.scm",
 		"/Users/boddmg/work/sicp/1/33-filter-accumulate.scm",
 		"/Users/boddmg/work/sicp/1/27.scm",
-		"/Users/boddmg/work/sicp/1/33-filter-accumulate-iter.scm",
 		"/Users/boddmg/work/sicp/1/24.scm",
 		"/Users/boddmg/work/sicp/1/23.scm",
 		"/Users/boddmg/work/sicp/1/29.scm",
@@ -305,7 +421,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -320,6 +436,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"remi",
+			"remin",
+			"pow",
+			"sqrt",
 			"gcd",
 			"let"
 		],
@@ -329,6 +449,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"gcd"
 		],
 		"reverse": true,
 		"show_context": true,
@@ -339,14 +460,107 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/Users/boddmg/work/sicp/2/17-last-pair.scm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 145,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								40,
+								40
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "plain text",
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Scheme/Scheme.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/boddmg/work/sicp/2/18-reverse.scm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 332,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								178,
+								211
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "scheme",
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Scheme/Scheme.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "utility.scm",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 674,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								88,
+								299
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "scheme",
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Scheme/Scheme.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 41.0
+		"height": 44.0
 	},
 	"input":
 	{
@@ -377,7 +591,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 233.0
+		"height": 205.0
 	},
 	"output.find_results":
 	{
@@ -387,7 +601,7 @@
 	"project": "sicp.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 68.0
 	},
 	"save_all_on_build": true,
 	"select_file":
