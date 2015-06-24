@@ -1,0 +1,12 @@
+(load "33-accumulate.scm")
+(load "33-append-list.scm")
+(load "33-length-of-list.scm")
+(load "utilities.scm")
+(define (map p sequence)
+	(accumulate (lambda (x y) (cons (p x) y)) nil sequence))
+
+(define (main argv)
+	(print (map (lambda (x) (* x x)) (list 1 2 3 4)))
+	(print (append (list 1 2 3 4) (list 5 6 7 8)))
+	(print (length (append (list 1 2 3 4) (list 5 6 7 8))))
+	)
