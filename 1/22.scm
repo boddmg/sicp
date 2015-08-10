@@ -1,7 +1,7 @@
 (import scheme)
 (use srfi-19)
 (require-extension srfi-19-core)
-(load "21.scm")
+(load "../1/21.scm")
 
 (define (runtime)
 	(time->nanoseconds (current-time)))
@@ -37,8 +37,10 @@
 			(search-for-primes (+ start 2) end))))
 
 (define (main parameters)
-	(search-for-primes 1000000000 10000000)
-	(search-for-primes 10000000000 10000000)
-	(search-for-primes 100000000000 10000000)
+	(print (prime? 7))
+	(print (prime? 9))
+	;(search-for-primes 1000000000 10000000)
+	;(search-for-primes 10000000000 10000000)
+	;(search-for-primes 100000000000 10000000)
 	;The time is near the sqrt(3) times between the processes.
 )

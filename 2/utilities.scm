@@ -1,1 +1,1 @@
-(define nil (list ))
+(define nil (list))

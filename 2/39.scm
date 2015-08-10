@@ -16,5 +16,6 @@
 		(append (list y) x)) nil sequence))
 
 (define (main argv)
+	(print (reverse (list 1 2 3)))
 	(print (reverse1 (list 1 2 3)))
 	)
