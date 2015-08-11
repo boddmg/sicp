@@ -46,5 +46,5 @@
 
 
 (define (main parameters)
-	(print (queens 8))
+	(print (queens 4))
 )
