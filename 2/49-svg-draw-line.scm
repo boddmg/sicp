@@ -40,15 +40,13 @@
 			" y2=\"" (number->string (ycor-vect (end-segment segment))) "\""
 			" style=\"stroke:rgb(99,99,99);stroke-width:2\"></line>\r\n")))
 
-(define (name parameters)
-  body)
 
 (define write-string
     (lambda (s p)
-      (let ((n (string-length s)))
-        (do ((i 0 (+ i 1)))
-            ((= i n))
-            (write-char (string-ref s i) p))))) 
+		(let ((n (string-length s)))
+			(do ((i 0 (+ i 1)))
+			    ((= i n))
+			    (write-char (string-ref s i) p))))) 
 
 (define (main parameters)
 	;(assert (= ))

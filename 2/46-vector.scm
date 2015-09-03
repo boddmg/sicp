@@ -23,3 +23,7 @@
 		(* scale (xcor-vect vect))
 		(* scale (ycor-vect vect))))
 
+(define (main parameters)
+	(print (ycor-vect (scale-vect 2 (make-vect 1 2))))
+	(print (ycor-vect (make-vect 1 2)))
+)

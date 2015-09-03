@@ -1,6 +1,3 @@
 (define (main parameters)
-	(define a (list (list 1 2 3)))
-	(define b (list (list 4 5 6)))
-	(print (append a b))
-	(print (car (append a b)))
+	(print (runtime))
 	)

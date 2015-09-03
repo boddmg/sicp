@@ -1,8 +1,18 @@
-(load "46.scm")
-(load "47.scm")
+(load "46-vector.scm")
+(load "47-frame.scm")
+(load "49-svg-draw-line.scm")
+
+(define context (svg-create-context))
+
+(define (svg-add-element element)
+	(set! context (string-append context element)))
+
+(define (draw-line start-point end-point)
+	(svg-add-line (make-segment start-point end-point)))
 
 (define (segments->painter segment-list) 
 	(lambda (frame)
+		(print frame)
 		(for-each
 			(lambda (segment)
 				(draw-line
@@ -12,8 +22,12 @@
 						(end-segment segment))))
 			segment-list)))
 
-(define (main parameters)
-	(segments->painter 
-		(list 
-			(make-segment (make-vect 1 2) (make-vect 4 4))
-			(make-segment (make-vect 2 3) (make-vect 3 4)))) )
+(define (list-frame-coord-map frame segments-list)
+	(map 
+		(lambda (segment) 
+			(make-segment 
+				((frame-coord-map frame) (start-segment segment))
+				((frame-coord-map frame) (end-segment segment))))
+		segments-list))
+
+
