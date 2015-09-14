@@ -1,0 +1,5 @@
+(define (main parameters)
+	(print (car ''a))
+	(print (car '(quote a)))
+	(print (car (quote (quote a))))
+)

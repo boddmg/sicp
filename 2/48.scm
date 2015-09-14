@@ -12,7 +12,6 @@
 
 (define (segments->painter segment-list) 
 	(lambda (frame)
-		(print frame)
 		(for-each
 			(lambda (segment)
 				(draw-line
